@@ -1,0 +1,17 @@
+<!-- Write a JavaScript function to remove specified number of characters from a string. -->
+<html>
+    <head>
+        <title>Assgn 3</title>
+    </head>
+    <body>
+	<script>
+		function remove(t, n){
+				return t.substring(n);
+		}
+		var t = prompt("Enter Text :");
+		var n = Number(prompt("Remove How Many Characters?"));
+		document.write("Entered Text : " + t + "<br>");
+		document.write("After Removing " + n + " Chars : " + remove(t, n));
+	</script>
+    </body>
+</html>

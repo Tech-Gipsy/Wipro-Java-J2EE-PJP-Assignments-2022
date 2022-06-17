@@ -1,0 +1,1 @@
+ Create a class called DefaultMessage with a single member variable called message which is initialized with a default value "Spring". Instantiate this class and test

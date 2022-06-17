@@ -1,0 +1,2 @@
+create table employee(EmpId int primary key,lname varchar(25),jobid int,hdate varchar(10));
+insert into Employee values(102,'rakesh',12,'12-12-2012');

@@ -1,0 +1,1 @@
+ Write a Servlet Program that prints the Servlet Config and Servlet Context Parameters

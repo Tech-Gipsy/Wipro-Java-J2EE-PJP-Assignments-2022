@@ -1,0 +1,34 @@
+<!-- Write validation functions and modify the onSubmit event Handler in the form code to validate the following form fields:
+1. Phone Number
+• Must be entered
+• Must be in below format
+           XXX-XXX-XXXX
+           XXX.XXX.XXXX
+           XXX XXX XXXX  -->
+
+<html>
+    <head>
+        <title>Assgn 2</title>
+		<script language = "Javascript">
+			function validate() {
+				var phone = document.getElementById("phone");
+				var phone_regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
+				if (phone.value.match(phone_regex)) {
+					return true;
+				} else {
+					alert("Re-enter number in XXX XXX XXXX or XXX-XXX-XXXX or XXX.XXX.XXXX formats");
+					phone.focus();
+					return false;
+				}
+			}
+		</script>
+    </head>
+    <body align="center">
+        <h1>Validate Phone</h1>
+        <form onsubmit="return validate()">
+            Phone : <input type="text" id="phone" /><br><br>
+            <input type="submit" value="Submit" />
+        </form>
+    </body>
+</html>

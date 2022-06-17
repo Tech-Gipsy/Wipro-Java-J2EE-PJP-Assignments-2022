@@ -1,0 +1,1 @@
+create table EMPLOYEES(employee_id int,first_name varchar(25),last_name varchar(25) not null,department_id int,salary int);

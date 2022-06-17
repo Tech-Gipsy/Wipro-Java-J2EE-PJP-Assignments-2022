@@ -1,0 +1,30 @@
+<!-- Create program to display current time in a textbox (HH:MM:SS) such that the value in the time textbox is dynamic (Time should get updated every second) and not static.
+[Hint: Use setTimeOut function] -->
+
+<html>
+    <head>
+        <title>Assgn 9</title>
+    </head>
+    <body align="center">
+        <h1>Clock</h1>
+        <p id="time"></p>
+        <script>
+			function getTime() {
+				let now = new Date();
+				let hours = String(now.getHours()).padStart(2, "0");
+				let minutes = String(now.getMinutes()).padStart(2, "0");
+				let seconds = String(now.getSeconds()).padStart(2, "0");
+				let time = hours + ":" + minutes + ":" + seconds;
+				document.getElementById("time").innerHTML = time;
+				updateTime();
+			}
+
+			function updateTime() {
+				var ref = 1000;
+				let update = setInterval("getTime()", ref);
+			}
+
+			getTime();
+		</script>
+    </body>
+</html>

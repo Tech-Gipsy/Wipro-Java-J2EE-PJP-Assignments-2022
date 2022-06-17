@@ -1,0 +1,84 @@
+<!-- Write a HTML program to create visitor information capture. The page should have the heading “Visitors information” and should ask the following information from the user : 
+• Email address using a textbox , 
+• User’s interest web for research or purchase as check box.
+• Occupation as  drop down box and preselected value should be given as (select one).
+• Check “want us to send you junk emails?” and the options given are “absolutely” and “no way man” using the radio button. 
+• A horizontal line divides the heading and the body content. Once all the inputs are given, the user should be able to submit or reset. 
+• This whole form should be tabulated using table tag. 
+ -->
+
+<html>
+<head>
+<title>Assgn 2</title>
+</head>
+<body>
+<style>
+table{
+	margin: 10% 40%;
+	width: 50%;
+	border-spacing: 5px;
+	align: center;
+	display: inline-block;
+}
+th{
+	border: Solid 2px rgb(87, 0, 0);
+
+}
+td{
+	border: Solid 2px rgb(255, 74, 216);
+
+	
+	padding: 7px 10px;
+}
+td#t01{
+	padding:7px 20%;
+	border-bottom: Solid 2px rgb(123, 43, 126);
+}
+input[type=text]{
+  width: 100%;
+}
+input[type=submit]{
+  width: 100%;
+}
+input[type=reset]{
+  width: 100%;
+}
+select{
+  width: 100%;
+}
+
+</style>
+
+<table>
+		<tr><th>Visitors Information</th><tr>
+		<tr>
+		<td>
+		<form>
+			Email Address :<input type="text" name="email">
+			<br><br>
+			User's Interest :
+				<input type="radio" name="User's Interest" values="research">Research
+				<input type="radio" name="User's Interest" values="purchase">Purchase
+			<br><br>
+			Occupation :
+				<select name="occupation">
+  					<option value="">Select One</option>
+  				</select>
+  			<br><br>
+ 			Want us to send you junk mail :<br>
+				<input type="radio" name="junk mail" values="yes">Absolutely
+				<input type="radio" name="junk mail" values="no">No way man
+ 			<br><br>
+ 			<tr>
+ 			<td id="t01">
+ 			<input type="submit" value="Submit Form" align="center">
+ 			<input type="reset" value=" Reset Form" align="center">
+			</td>
+			</tr>
+		</form>
+		</td>
+		</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- Write a JavaScript program which will have one textbox to get input as string and after giving input when you leave the input textbox, a function is triggered which transforms the input text to uppercase. -->
+<html>
+    <head>
+        <title>Assgn 5</title>
+    </head>
+    <body align="center">
+    
+        Text : </label><input type="text" name="text" id="text" onblur="uppercase();" />
+        <script langauge = "Javascript">
+			function uppercase() {
+				var text = document.getElementById("text");
+				text.value = text.value.toUpperCase();
+			}
+		</script>
+    </body>
+</html>

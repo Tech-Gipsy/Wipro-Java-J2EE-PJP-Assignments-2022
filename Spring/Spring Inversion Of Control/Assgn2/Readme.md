@@ -1,0 +1,1 @@
+ Create a class called ConstructorMessage with a single member variable called message which is initialized with null.The class will have a parameterized constructor which initializes the member variable called message. Instantiate this class using Inversion control and test. [Perform Constructor Injection]

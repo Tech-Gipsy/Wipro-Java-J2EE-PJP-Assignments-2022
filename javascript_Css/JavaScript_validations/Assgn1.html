@@ -1,0 +1,40 @@
+<!-- Write validation functions and modify the onSubmit event Handler in the form code to validate the following form fields:
+1. Member number
+• Must be entered
+• Must be a number
+2. Password
+• Must be entered
+• Must be longer than 4 characters
+If an error occurs, use an alert box to display an error message for the first field in error and place the cursor in the first field in error. -->
+
+<html>
+    <head>
+        <title>Assgn 1</title>
+		<script language = "Javascript">
+			function validate() {
+				var memNum = document.getElementById("mem_num");
+				var passwd = document.getElementById("passwd");
+				if (memNum.value == null || memNum.value == "" || isNaN(memNum.value)) {
+					alert("Please Enter a number only!");
+					memNum.focus();
+					return false;
+				}
+				if (passwd.value == "" || passwd.value.length < 4) {
+					alert("Please enter a password longer than 4 chars!");
+					passwd.focus();
+					return false;
+				}
+			}
+		</script>
+    </head>
+    <body align="center">
+        <h1>Validate Member</h1>
+        <form onsubmit="return validate()">
+			<table align = "center">
+				<tr><td>Member Number : </td><td> <input type="text" id="mem_num" /></td></tr> 
+				<tr><td>Password : </td><td> <input type="password" id="passwd" /></td></tr> 
+				<tr><td><input type="submit" value="Submit" /></td></tr>
+			</table>
+        </form>    
+    </body>
+</html>

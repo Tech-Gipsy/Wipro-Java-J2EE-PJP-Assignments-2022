@@ -1,0 +1,86 @@
+<!-- Write a HTML program to create an online registration form which captures the following data: 
+Username, Password, Confirm password, Name using text boxes.
+Gender by radio buttons. 
+Address should be taken by multiple line inputs from the user. 
+Finally the Profession should be provided by selecting from the drop down box. 
+Make sure the contents of the page is aligned in the middle.   -->
+
+<html>
+<head>
+<title>Assgn 3</title>
+</head>
+<body>
+<style>
+table{
+	margin: 0% 35%;
+	
+	width: 50%;
+	border-spacing: 0px;
+	align: center;
+	display: inline-block;
+}
+th{
+	border-bottom: Solid 2px black;
+
+}
+td{
+	border: Solid 2px black;
+	padding: 7px 10px;
+}
+td#t01{
+	padding:7px 17%;
+	border-bottom: Solid 2px black;
+}
+
+input[type=text]{
+  width: 100%;
+}
+input[type=password]{
+  width: 100%;
+}
+input[type=submit]{
+  width: 100%;
+}
+input[type=reset]{
+  width: 100%;
+}
+</style>
+
+<table>
+		<tr><th>Online Registration</th><tr>
+		<tr>
+		<td>
+		<form>
+			Name :<input type="text" name="name">
+			<br><br>
+			Username :<input type="text" name="uname">
+			<br><br>
+			Password :<input type="password" name="pwd">
+			<br><br>
+			Confirm Password :<input type="password" name="cpwd">
+			<br><br>
+			
+			Address :<br>
+			<textarea rows="4" cols="50" name="address"></textarea>
+			<br><br>
+			Profession :<select name="occupation">
+  			<option value="">Select One</option>
+			<option value="">Student</option>
+			<option value="">Gamer</option>
+  			</select>
+  			<br><br>
+ 			<tr>
+ 			<td id="t1">
+ 			<input type="submit" value="Submit Form" align="center"><br><br>
+ 			<input type="reset" value=" Reset Form" align="center">
+			</td>
+			</tr>
+		</form>
+		</td>
+		</tr>
+</table>
+
+</body>
+</html>
+</body>
+</html>

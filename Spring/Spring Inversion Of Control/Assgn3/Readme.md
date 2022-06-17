@@ -1,0 +1,1 @@
+ Create a class called SetterMessage with a single member variable called message which is initialized with null. Instantiate this class using Inversion control and test[ Perform Setter Injection ]

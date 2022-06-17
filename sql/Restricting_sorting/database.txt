@@ -1,0 +1,13 @@
+create table employee
+(EmpId int primary key,
+lname varchar(25),
+salary int,
+DeptId int,
+hdate int,
+managerid int,
+commission int);
+insert into Employee values(102,'j1a',12000,20,1980,22,442);
+insert into Employee values(103,'s1d',11000,20,2001,32,352);
+insert into Employee values(104,'s2a',19000,50,1995,53,352);
+insert into Employee values(105,'Av1',15000,3,1994,3,1);
+insert into Employee values(176,'Victim',15000,4,1994,3,33);

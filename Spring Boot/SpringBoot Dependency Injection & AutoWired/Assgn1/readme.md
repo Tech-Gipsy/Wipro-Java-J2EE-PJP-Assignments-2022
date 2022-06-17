@@ -1,0 +1,1 @@
+ Define three bean class called Laptop, Hard disk and Battery. And achieve dependency injection and auto wired by using Spring Boot.

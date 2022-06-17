@@ -1,0 +1,1 @@
+ Create a Spring based MVC application which displays all the Student details which were inserted earlier

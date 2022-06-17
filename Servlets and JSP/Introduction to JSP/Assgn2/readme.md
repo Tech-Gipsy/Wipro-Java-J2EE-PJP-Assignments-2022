@@ -1,0 +1,1 @@
+ Write a JSP program which when invoked will print today’s date and time. [Hint: Use JSP expressions here]

@@ -1,0 +1,1 @@
+ Create a Spring based MVC application which collects Student details from the user and inserts them into the database

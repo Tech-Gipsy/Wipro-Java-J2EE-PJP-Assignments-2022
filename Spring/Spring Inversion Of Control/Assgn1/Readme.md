@@ -1,0 +1,1 @@
+ Create an abstract parent class called Shape with an abstract draw method and create subclasses of this class like Rectangle, Triangle and Parallelogram. Define a simple java class called DrawShape, which will instantiate an object depending on the dependency injection and calls appropriate draw method. 

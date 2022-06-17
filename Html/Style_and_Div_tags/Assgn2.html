@@ -1,0 +1,94 @@
+<!-- Group the Hands-on Assignment 2 and 3 on Forms to a single web page providing separate div tags for each forms.  -->
+<html>
+    <head>
+       <title>Assgn 2</title>
+       <style>table{
+        margin: 0% 35%;
+        
+        width: 50%;
+        border-spacing: 0px;
+        align: center;
+        display: inline-block;
+    }
+    th{
+        border-bottom: Solid 2px black;
+    
+    }
+    td{
+        border: Solid 2px black;
+        padding: 7px 10px;
+    }
+    td#t01{
+        padding:7px 17%;
+        border-bottom: Solid 2px black;
+    }</style>
+    </head>
+    <body align="center">
+        <div>
+            <table align="center">
+                <tr>
+                    <th>Visitors Information</th>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>
+                        <br />
+                        <form>
+                            Email Address :
+                            <input type="email" name="email" id="email" /><br />
+                            User's Interest :<br />
+                            Research<input type="checkbox" name="interest" value="research" />
+                            Purchase <input type="checkbox" name="interest" value="purchase" /><br />
+                            Occupation :
+                            <select name="occupation" value="select-one" id="occupation">
+                                <option>Select One</option> </select>
+								<br />
+                            Want us to send you junk mails? <br />
+                            Absolutely<input type="radio" name="send-mail" value="yes" />
+                            No Way Man<input type="radio" name="send-mail" value="no" />
+                            <br />
+                            <input type="submit" value="Submit" />
+                            <input type="reset" value="Reset" />
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <div>
+            <table>
+                <tr><th>Online Registration</th><tr>
+                <tr>
+                <td>
+                <form>
+                    Name :<input type="text" name="name">
+                    <br><br>
+                    Username :<input type="text" name="uname">
+                    <br><br>
+                    Password :<input type="password" name="pwd">
+                    <br><br>
+                    Confirm Password :<input type="password" name="cpwd">
+                    <br><br>
+                    
+                    Address :<br>
+                    <textarea rows="4" cols="50" name="address"></textarea>
+                    <br><br>
+                    Profession :<select name="occupation">
+                      <option value="">Select One</option>
+                    <option value="">Student</option>
+                    <option value="">Gamer</option>
+                      </select>
+                      <br><br>
+                     <tr>
+                     <td id="t1">
+                     <input type="submit" value="Submit Form" align="center"><br><br>
+                     <input type="reset" value=" Reset Form" align="center">
+                    </td>
+                    </tr>
+                </form>
+                </td>
+                </tr>
+        </table>
+        </div>
+    </body>
+</html>

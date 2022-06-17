@@ -1,0 +1,1 @@
+create table students(Rollno number(4)primary key,StudentName varchar(20) not null,Standard varchar(2) not null,Date_Of_Birth date,Fees number(9,2));

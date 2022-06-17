@@ -1,0 +1,1 @@
+ Create a bean that represents information needed to calculate an employee's salary. Has String (employee name) and int (employee ID) properties. Create an application to demonstrate automatically filling in bean properties from request parameters.

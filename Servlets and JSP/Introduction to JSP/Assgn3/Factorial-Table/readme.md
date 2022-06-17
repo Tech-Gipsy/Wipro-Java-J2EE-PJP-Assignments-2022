@@ -1,0 +1,1 @@
+ Write a jsp program that prints a table with numbers and their corresponding factorial values.

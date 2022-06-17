@@ -1,0 +1,9 @@
+Anitha : 1
+Harish : 1
+Janani : 1
+Katari : 1
+Manoj : 1
+Sureka : 1
+at : 6
+wipro : 6
+works : 6
